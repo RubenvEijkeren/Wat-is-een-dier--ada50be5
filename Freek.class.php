@@ -14,6 +14,10 @@ class Freek
         echo "Freek brengt " . $dier->dier . " naar bed" . PHP_EOL;
         $dier->sleep();
     }
+    public function speak($dier)
+    {
+        $dier->speak();
+    }
 }
 
 $vis = new Vis();
@@ -24,4 +28,6 @@ $freek->geefEten($vis);
 $freek->geefEten($vogel);
 $freek->brengNaarBed($vis);
 $freek->brengNaarBed($vogel);
+$freek->speak($vis);
+$freek->speak($vogel);
 ?>
